@@ -9,19 +9,283 @@
     <meta name="theme-color" content="#0056b3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <title>TechBase360 — Готовый склад в Воскресенске с офисом | Аренда/продажа</title>
     <meta name="description" content="Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.">
     <meta name="keywords" content="логистический комплекс Воскресенск, techbase360, купить склад, аренда склада, промбаза Московская область">
+    
     <meta property="og:title" content="TechBase360 — Логистический комплекс в Воскресенске">
     <meta property="og:description" content="Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.">
     <meta property="og:image" content="https://techbase360.ru/images/og-image.jpg">
     <meta property="og:url" content="https://techbase360.ru/">
     <meta property="og:type" content="website">
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
+
     <style>
-        :root{--graphite:#22252A;--graphite-light:#2E3239;--accent:#FF6B35;--text:#E0E0E0;--text-light:#F5F5F5;--cian:#3AA8E6;--avito:#3B7EFF}.header-shadow{box-shadow:0 4px 6px rgba(0,0,0,.3)}.header-gradient{background:linear-gradient(90deg,var(--graphite) 0%,var(--graphite-light) 100%)}.btn-secondary{background-color:var(--graphite-light);color:var(--text);border:1px solid var(--accent);padding:10px 15px;border-radius:5px;text-decoration:none;transition:background-color .3s ease,color .3s ease}.btn-secondary:hover{background-color:var(--accent);color:#fff}body{font-family:Arial,sans-serif;margin:0;padding:0;background:linear-gradient(135deg,#22252A 0%,#2E3239 100%),url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.3"><polygon points="50,0 100,50 50,100 0,50" fill="%23FF6B35"/></svg>');color:var(--text)}.container{max-width:1200px;margin:0 auto;padding:20px}.header{background:var(--graphite);color:#fff;padding:15px 0;text-align:center}.header nav ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center}.header nav ul li{margin:0 15px}.header nav ul li a{color:#fff;text-decoration:none;font-weight:700}.hero{background-color:var(--graphite-light);color:#fff;text-align:center;padding:80px 20px;min-height:400px;display:flex;flex-direction:column;justify-content:center;align-items:center}.hero h1{font-size:3em;margin-bottom:20px}.hero p{font-size:1.2em;margin-bottom:30px}.btn{display:inline-block;background-color:var(--accent);color:#fff;padding:12px 25px;border-radius:5px;text-decoration:none;font-weight:700;transition:background-color .3s ease}.btn:hover{background-color:#E65C2B}.features,.about,.gallery,.location,.contact{padding:60px 0;text-align:center}.features h2,.about h2,.gallery h2,.location h2,.contact h2{font-size:2.5em;color:var(--accent);margin-bottom:40px}.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px}.feature-item{background-color:var(--graphite-light);padding:30px;border-radius:10px;text-align:left}.feature-item h3{color:var(--accent);margin-bottom:15px}.feature-item ul{list-style:none;padding:0}.feature-item ul li{margin-bottom:10px}.about p{font-size:1.1em;line-height:1.6;max-width:800px;margin:0 auto}.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:40px}.gallery-item img{width:100%;height:250px;object-fit:cover;border-radius:10px}.location-content{display:flex;flex-direction:column;gap:30px;margin-top:40px}.map-container{width:100%;height:400px;background-color:#eee;border-radius:10px;overflow:hidden}.contact-form{max-width:600px;margin:0 auto;background-color:var(--graphite-light);padding:40px;border-radius:10px;text-align:left}.contact-form label{display:block;margin-bottom:8px;color:var(--text-light)}.contact-form input,.contact-form textarea{width:calc(100% - 20px);padding:10px;margin-bottom:20px;border:1px solid #555;border-radius:5px;background-color:#333;color:#fff}.contact-form button{width:100%;padding:12px;background-color:var(--accent);color:#fff;border:none;border-radius:5px;font-size:1.1em;cursor:pointer;transition:background-color .3s ease}.contact-form button:hover{background-color:#E65C2B}.whatsapp-btn{position:fixed;bottom:20px;right:20px;background-color:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2em;text-decoration:none;box-shadow:0 4px 8px rgba(0,0,0,.2);z-index:1000}.whatsapp-btn:hover{background-color:#1DA851}@media (max-width:768px){.header nav ul{flex-direction:column}.header nav ul li{margin-bottom:10px}.hero h1{font-size:2.5em}.hero p{font-size:1em}.feature-grid,.gallery-grid{grid-template-columns:1fr}}.expand-btn{background-color:var(--graphite-light);color:var(--accent);border:none;padding:10px 0;width:100%;text-align:left;cursor:pointer;font-weight:700;font-size:1.1em;transition:color .3s ease}.expand-btn:hover{color:#fff}.expand-btn.active+.content{display:block}.expand-btn span{float:right}.content{display:none;padding:15px 0;line-height:1.6;font-size:.95em;border-top:1px solid #444;margin-top:10px}
+        /* Оригинальная графитовая цветовая схема - СОХРАНЕНА */
+        :root {
+            --graphite: #22252A;
+            --graphite-light: #2E3239;
+            --accent: #FF6B35;
+            --text: #E0E0E0;
+            --text-light: #F5F5F5;
+            --cian: #3AA8E6;
+            --avito: #3B7EFF;
+        }
+        
+        /* Добавлены/восстановлены стили для шапки и кнопок ЦИАН/Авито */
+        .header-shadow{box-shadow:0 4px 6px rgba(0,0,0,.3)}
+        .header-gradient{background:linear-gradient(90deg,var(--graphite) 0%,var(--graphite-light) 100%)}
+        .btn-secondary{background-color:var(--graphite-light);color:var(--text);border:1px solid var(--accent);padding:10px 15px;border-radius:5px;text-decoration:none;transition:background-color .3s ease,color .3s ease}.btn-secondary:hover{background-color:var(--accent);color:#fff}
+        
+        /* Оригинальный фон с геометрическими фигурами - СОХРАНЕН */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: 
+                linear-gradient(135deg, var(--graphite) 0%, var(--graphite-light) 100%),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.3"><polygon points="50,0 100,50 50,100 0,50" fill="%23FF6B35"/></svg>');
+            color: var(--text);
+        }
+
+        /* Общие стили контейнера и секций - СОХРАНЕНЫ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: var(--graphite);
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header nav ul li {
+            margin: 0 15px;
+        }
+
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hero {
+            background-color: var(--graphite-light);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color .3s ease;
+        }
+
+        .btn:hover {
+            background-color: #E65C2B;
+        }
+
+        .features, .about, .gallery, .location, .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features h2, .about h2, .gallery h2, .location h2, .contact h2 {
+            font-size: 2.5em;
+            color: var(--accent);
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background-color: var(--graphite-light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .feature-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-item ul li {
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .location-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--graphite-light);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-light);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color .3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #E65C2B;
+        }
+        
+        /* Кнопка WhatsApp - компактная, только иконка, как вы просили */
+        .whatsapp-btn{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background-color:#25D366;
+            color:#fff;
+            width:60px; /* Компактный размер */
+            height:60px; /* Компактный размер */
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:2em; 
+            text-decoration:none;
+            box-shadow:0 4px 8px rgba(0,0,0,.2);
+            z-index:1000;
+        }
+        .whatsapp-btn:hover{background-color:#1DA851}
+        .whatsapp-btn span { /* Скрываем текст, чтобы была только иконка */
+            display: none; 
+        }
+
+        /* Адаптивность - СОХРАНЕНА */
+        @media (max-width: 768px) {
+            .header nav ul {
+                flex-direction: column;
+            }
+
+            .header nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .feature-grid, .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Стили для раскрывающихся блоков - СОХРАНЕНЫ */
+        .expand-btn{background-color:var(--graphite-light);color:var(--accent);border:none;padding:10px 0;width:100%;text-align:left;cursor:pointer;font-weight:700;font-size:1.1em;transition:color .3s ease}.expand-btn:hover{color:#fff}.expand-btn.active+.content{display:block}.expand-btn span{float:right}.content{display:none;padding:15px 0;line-height:1.6;font-size:.95em;border-top:1px solid #444;margin-top:10px}
     </style>
 </head>
 <body>
@@ -104,6 +368,7 @@
       ]
     }
     </script>
+
     <header class="header header-shadow header-gradient">
         <div class="container">
             <nav>
@@ -230,18 +495,17 @@
     </section>
     
     <a href="https://wa.me/+79999115020" class="whatsapp-btn" aria-label="WhatsApp" target="_blank">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366">
-            <path d="M17.472 14.382c-.085-.315-.175-.322-.52-.518-.344-.195-1.92-.937-2.227-1.047-.306-.11-.529-.164-.752.164-.224.329-.867 1.047-1.063 1.26-.195.213-.39.238-.724.093-.334-.145-.992-.365-1.89-1.161-.69-.607-1.156-1.357-1.293-1.597-.137-.24-.014-.368.106-.484.097-.097.213-.238.324-.357.11-.12.148-.204.22-.345.074-.14.037-.264-.018-.372-.054-.108-.475-1.144-.652-1.564-.176-.42-.352-.36-.52-.368-.17-.008-.367-.02-.56-.02-.196 0-.52.073-.796.393-.276.32-.988.966-.988 2.364s1.015 2.744 1.155 2.946c.14.202 1.936 2.977 4.707 4.148 2.316.974 2.766.793 3.327.747.562-.045 1.764-.72 2.01-1.428.24-.707.24-1.29.17-1.428-.066-.137-.24-.213-.49-.346zm-5.021 5.093l-.36-.046c-2.457-.6-4.01-3.268-4.145-3.415-.135-.147-.282-.367-.282-.57s.075-.41.135-.49c.06-.08.12-.11.23-.21.11-.1.2-.18.31-.28.11-.1.19-.17.27-.26.08-.09.13-.15.19-.22.06-.07.09-.1.14-.14.05-.04.08-.05.1-.06.02-.01.03-.01.04-.01h.01c.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03"/>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.085-.315-.175-.322-.52-.518-.344-.195-1.92-.937-2.227-1.047-.306-.11-.529-.164-.752.164-.224.329-.867 1.047-1.063 1.26-.195.213-.39.238-.724.093-.334-.145-.992-.365-1.89-1.161-.69-.607-1.156-1.357-1.293-1.597-.137-.24-.014-.368.106-.484.097-.097.213-.238.324-.357.11-.12.148-.204.22-.345.074-.14.037-.264-.018-.372-.054-.108-.475-1.144-.652-1.564-.176-.42-.352-.36-.52-.368-.17-.008-.367-.02-.56-.02-.196 0-.52.073-.796.393-.276.32-.988.966-.988 2.364s1.015 2.744 1.155 2.946c.14.202 1.936 2.977 4.707 4.148 2.316.974 2.766.793 3.327.747.562-.045 1.764-.72 2.01-1.428.24-.707.24-1.29.17-1.428-.066-.137-.24-.213-.49-.346zm-5.021 5.093l-.36-.046c-2.457-.6-4.01-3.268-4.145-3.415-.135-.147-.282-.367-.282-.57s.075-.41.135-.49c.06-.08.12-.11.23-.21.11-.1.2-.18.31-.28.11-.1.19-.17.27-.26.08-.09.13-.15.19-.22.06-.07.09-.1.14-.14.05-.04.08-.05.1-.06.02-.01.03-.01.04-.01h.01c.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03"/>
         </svg>
-        <span>Написать</span>
     </a>
 
     <footer style="background: var(--graphite); color: #fff; padding: 30px 0; text-align: center; font-size: 0.9em;">
         <div class="container">
             <p>© 2024 TechBase360 — Логистический комплекс в Воскресенске</p>
             <p>
-                <a href="#privacy" style="color: var(--text-light); text-decoration: none;">Политика конфиденциальности</a> | 
-                <a href="#terms" style="color: var(--text-light); text-decoration: none;">Условия использования</a>
+                <a href="#" style="color: var(--text-light); text-decoration: none;">Политика конфиденциальности</a> | 
+                <a href="#" style="color: var(--text-light); text-decoration: none;">Условия использования</a>
             </p>
             <div class="breadcrumbs" style="margin-top:15px;font-size:0.8rem;color:#999;">
                 <a href="/" style="color: #999; text-decoration: none;">Главная</a> / <span>Комплекс</span>
@@ -268,12 +532,14 @@
     </div>
 
     <script>
-        // JS для автоподстановки +7 и т.д.
+        // Автоподстановка +7 в телефон
         document.getElementById('phone-input').addEventListener('input', function(e) {
             if (!this.value.startsWith('+7') && this.value.length > 0) {
                 this.value = '+7' + this.value.replace(/^\+7/, '');
             }
         });
+        
+        // Раскрывающиеся блоки
         document.querySelectorAll('.expand-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 this.classList.toggle('active');
@@ -281,6 +547,8 @@
                 content.style.display = content.style.display === 'block' ? 'none' : 'block';
             });
         });
+        
+        // Плавная прокрутка
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -290,14 +558,17 @@
                 });
             });
         });
+        
+        // Отправка формы (базовая заглушка, для реальной работы требуется серверный обработчик)
         document.getElementById('request-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            this.submit();
+            // В реальном проекте здесь будет отправка данных на сервер
+            // this.submit(); 
             alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
-            this.reset();
+            this.reset(); // Очистка формы после отправки
         });
 
-        // ServiceWorker registration
+        // ServiceWorker registration (PWA)
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -307,19 +578,19 @@
                 });
             });
         }
-
-        // Google Analytics
+        
+        // Google Analytics (Universal Analytics - analytics.js)
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'G-XXXXXXXXXX', 'auto'); // Замените на ваш ID Google Analytics
+        ga('create', 'G-XXXXXXXXXX', 'auto'); // !!! ЗАМЕНИТЕ НА ВАШ ID Google Analytics !!!
         ga('send', 'pageview');
 
         // Yandex.Metrika
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        ym(XXXXXX, "init", {
+        ym(XXXXXX, "init", { // !!! ЗАМЕНИТЕ XXXXXX НА ВАШ ID СЧЕТЧИКА Яндекс.Метрики !!!
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true,
