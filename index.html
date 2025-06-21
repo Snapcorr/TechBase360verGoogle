@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="Wn9Cl02vcTkQzBjtTJ5jmH9LWjqTrQZV81JVtWnbfR8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Wn9Cl02vcTkQzBjtTJ5jmH9LWjqTrQZV81JVtWnbfR8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#0056b3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,8 +15,7 @@
     
     <meta property="og:title" content="TechBase360 — Логистический комплекс в Воскресенске">
     <meta property="og:description" content="Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.">
-    <meta property="og:image" content="https://techbase360.ru/images/og-image.jpg">
-    <meta property="og:url" content="https://techbase360.ru/">
+    <meta property="og:image" content="https://techbase360.ru/images/og-image.jpg"> <meta property="og:url" content="https://techbase360.ru/">
     <meta property="og:type" content="website">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -25,7 +23,7 @@
     <link rel="manifest" href="/manifest.json">
 
     <style>
-        /* Оригинальная графитовая цветовая схема - СОХРАНЕНА */
+        /* Графитовая цветовая схема из исходного файла студента - СОХРАНЕНА */
         :root {
             --graphite: #22252A;
             --graphite-light: #2E3239;
@@ -40,8 +38,8 @@
         .header-shadow{box-shadow:0 4px 6px rgba(0,0,0,.3)}
         .header-gradient{background:linear-gradient(90deg,var(--graphite) 0%,var(--graphite-light) 100%)}
         .btn-secondary{background-color:var(--graphite-light);color:var(--text);border:1px solid var(--accent);padding:10px 15px;border-radius:5px;text-decoration:none;transition:background-color .3s ease,color .3s ease}.btn-secondary:hover{background-color:var(--accent);color:#fff}
-        
-        /* Оригинальный фон с геометрическими фигурами - СОХРАНЕН */
+
+        /* Фон с геометрическими фигурами из исходного файла студента - СОХРАНЕН */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -52,7 +50,7 @@
             color: var(--text);
         }
 
-        /* Общие стили контейнера и секций - СОХРАНЕНЫ */
+        /* Общие стили контейнера и секций из исходного файла студента - СОХРАНЕНЫ */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -261,7 +259,7 @@
             display: none; 
         }
 
-        /* Адаптивность - СОХРАНЕНА */
+        /* Адаптивность из исходного файла студента - СОХРАНЕНА */
         @media (max-width: 768px) {
             .header nav ul {
                 flex-direction: column;
@@ -284,7 +282,7 @@
             }
         }
         
-        /* Стили для раскрывающихся блоков - СОХРАНЕНЫ */
+        /* Стили для раскрывающихся блоков из исходного файла студента - СОХРАНЕНЫ */
         .expand-btn{background-color:var(--graphite-light);color:var(--accent);border:none;padding:10px 0;width:100%;text-align:left;cursor:pointer;font-weight:700;font-size:1.1em;transition:color .3s ease}.expand-btn:hover{color:#fff}.expand-btn.active+.content{display:block}.expand-btn span{float:right}.content{display:none;padding:15px 0;line-height:1.6;font-size:.95em;border-top:1px solid #444;margin-top:10px}
         
         /* Стили для центрирования кнопок ЦИАН и Авито в футере */
@@ -305,8 +303,7 @@
           "@type": "CommercialProperty",
           "name": "TechBase360 — Логистический комплекс в Воскресенске",
           "url": "https://techbase360.ru/",
-          "image": "https://techbase360.ru/images/warehouse1.jpg",
-          "address": {
+          "image": "./images/warehouse1.jpg", "address": {
             "@type": "PostalAddress",
             "streetAddress": "ул. Центральная, 36А",
             "addressLocality": "Воскресенск",
@@ -540,14 +537,14 @@
     </div>
 
     <script>
-        // Автоподстановка +7 в телефон
+        // Автоподстановка +7 в телефон из исходного файла студента - СОХРАНЕНА
         document.getElementById('phone-input').addEventListener('input', function(e) {
             if (!this.value.startsWith('+7') && this.value.length > 0) {
                 this.value = '+7' + this.value.replace(/^\+7/, '');
             }
         });
         
-        // Раскрывающиеся блоки
+        // Раскрывающиеся блоки из исходного файла студента - СОХРАНЕНЫ
         document.querySelectorAll('.expand-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 this.classList.toggle('active');
@@ -556,7 +553,7 @@
             });
         });
         
-        // Плавная прокрутка
+        // Плавная прокрутка из исходного файла студента - СОХРАНЕНА
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -567,13 +564,12 @@
             });
         });
         
-        // Отправка формы (базовая заглушка, для реальной работы требуется серверный обработчик)
+        // Отправка формы - ВОССТАНОВЛЕНО this.submit() из файла студента
         document.getElementById('request-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            // В реальном проекте здесь будет отправка данных на сервер
-            // this.submit(); 
+            this.submit(); // ВОССТАНОВЛЕНО КАК В ВАШЕМ ИСХОДНИКЕ
             alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
-            this.reset(); // Очистка формы после отправки
+            this.reset();
         });
 
         // ServiceWorker registration (PWA)
