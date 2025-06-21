@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="Wn9Cl02vcTkQzBjtTJ5jmH9LWjqTrQZV81JVtWnbfR8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Wn9Cl02vcTkQzBjtTJ5jmH9LWjqTrQZV81JVtWnbfR8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#0056b3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <title>TechBase360 — Готовый склад в Воскресенске с офисом | Аренда/продажа</title>
-    <meta name="description" content="Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.">
-    <meta name="keywords" content="логистический комплекс Воскресенск, techbase360, купить склад, аренда склада, промбаза Московская область">
+    <title>Techbase 360 — Логистический комплекс в Воскресенске | Склад, фулфилмент, стоянка фур</title>
+    <meta name="description" content="Логистический комплекс Techbase 360 в Воскресенске: продажа и аренда производственно-складских помещений 2020 м², включая офисный модуль. Идеально подходит как фулфилмент-центр для Wildberries и Ozon, с площадкой для стоянки фур и возможностью СТО, центр обработки заказов, распределительный центр под e-commerce.">
+    <meta name="keywords" content="логистический комплекс Воскресенск, промбаза Воскресенск, купить склад, производственные помещения, Techbase 360, складские помещения Воскресенск, аренда склада, складской терминал, фулфилмент центр, распределительный центр, логистическая платформа, обработка заказов, склад для e-commerce, хранение и упаковка, центр логистики маркетплейса, склад интернет-магазина, Wildberries, Ozon, СберМегаМаркет, Яндекс.Маркет, интернет-магазин, фура, тягач, грузовик, спецтехника, автотранспорт, СТО, техническое обслуживание, осмотровая яма, гараж под СТО, сервис грузовиков, автосервис, площадка для стоянки фур, ангар под фулфилмент, центр обработки заказов, логистический узел рядом с М5, территория для стоянки спецтехники, участок с площадкой под грузовую логистику, площадка под СТО и склад, производственная зона с охраной, склад с готовыми коммуникациями, площадка под хранение и отгрузку">
     
-    <meta property="og:title" content="TechBase360 — Логистический комплекс в Воскресенске">
-    <meta property="og:description" content="Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.">
-    <meta property="og:image" content="https://techbase360.ru/images/og-image.jpg"> <meta property="og:url" content="https://techbase360.ru/">
+    <link rel="canonical" href="https://techbase360.ru/">
+
+    <meta property="og:title" content="Techbase 360 — Логистический комплекс в Воскресенске">
+    <meta property="og:description" content="Логистический комплекс Techbase 360 в Воскресенске: продажа и аренда производственно-складских помещений 2020 м², включая офисный модуль. Идеально подходит как фулфилмент-центр для Wildberries и Ozon, с площадкой для стоянки фур и возможностью СТО.">
+    <meta property="og:image" content="https://techbase360.ru/images/og-image.jpg"> 
+    <meta property="og:url" content="https://techbase360.ru/">
     <meta property="og:type" content="website">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -39,14 +43,14 @@
         .header-gradient{background:linear-gradient(90deg,var(--graphite) 0%,var(--graphite-light) 100%)}
         .btn-secondary{background-color:var(--graphite-light);color:var(--text);border:1px solid var(--accent);padding:10px 15px;border-radius:5px;text-decoration:none;transition:background-color .3s ease,color .3s ease}.btn-secondary:hover{background-color:var(--accent);color:#fff}
 
-        /* Фон с геометрическими фигурами из исходного файла студента - СОХРАНЕН */
+        /* Фон с геометрическими фигурами - НАСТРОЕН */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: 
                 linear-gradient(135deg, var(--graphite) 0%, var(--graphite-light) 100%),
-                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.3"><polygon points="50,0 100,50 50,100 0,50" fill="%23FF6B35"/></svg>');
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.4"><polygon points="50,0 100,50 50,100 0,50" fill="%23FF6B35"/></svg>'); /* Opacity изменена для "чуть ярче" */
             color: var(--text);
         }
 
@@ -236,27 +240,43 @@
             background-color: #E65C2B;
         }
         
-        /* Кнопка WhatsApp - компактная, только иконка */
+        /* Кнопка WhatsApp - с текстом и пульсацией */
         .whatsapp-btn{
             position:fixed;
             bottom:20px;
             right:20px;
             background-color:#25D366;
             color:#fff;
-            width:60px; 
-            height:60px; 
-            border-radius:50%;
+            /* Убрали фиксированный width/height, чтобы позволить тексту */
+            padding: 10px 15px; /* Добавлен отступ */
+            border-radius:30px; /* Более округлый для кнопки с текстом */
             display:flex;
             align-items:center;
             justify-content:center;
-            font-size:2em; 
+            font-size:1.1em; /* Уменьшен размер шрифта для текста */
             text-decoration:none;
             box-shadow:0 4px 8px rgba(0,0,0,.2);
             z-index:1000;
+            transition: background-color .3s ease;
+            gap: 8px; /* Отступ между иконкой и текстом */
+
+            /* Анимация пульсации */
+            animation: pulse 2s infinite;
         }
         .whatsapp-btn:hover{background-color:#1DA851}
-        .whatsapp-btn span { /* Скрываем текст, чтобы была только иконка */
-            display: none; 
+        .whatsapp-btn svg { /* Размер иконки */
+            width: 24px;
+            height: 24px;
+        }
+        .whatsapp-btn span { 
+            display: inline-block; /* Показываем текст */
+            margin-top: 2px; /* Небольшой вертикальный отступ для выравнивания */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
 
         /* Адаптивность из исходного файла студента - СОХРАНЕНА */
@@ -291,6 +311,17 @@
             justify-content: center; /* Центрирование кнопок */
             gap: 10px; /* Расстояние между кнопками */
             margin-top: 20px; /* Отступ сверху */
+            margin-bottom: 15px; /* Отступ перед хлебными крошками */
+        }
+        /* Стиль для хлебных крошек в футере */
+        .breadcrumbs-footer { /* Новый класс, чтобы отличать от возможного другого использования breadcrumbs */
+            margin-top:15px;
+            font-size:0.8rem;
+            color:#999;
+        }
+        .breadcrumbs-footer a {
+            color: #999;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -301,9 +332,10 @@
       "@graph": [
         {
           "@type": "CommercialProperty",
-          "name": "TechBase360 — Логистический комплекс в Воскресенске",
+          "name": "Techbase 360 — Логистический комплекс в Воскресенске",
           "url": "https://techbase360.ru/",
-          "image": "./images/warehouse1.jpg", "address": {
+          "image": "./images/warehouse1.jpg", 
+          "address": {
             "@type": "PostalAddress",
             "streetAddress": "ул. Центральная, 36А",
             "addressLocality": "Воскресенск",
@@ -316,7 +348,7 @@
             "latitude": 55.3187,
             "longitude": 38.6792
           },
-          "description": "Продажа склада 2020 м² в Воскресенске. Высота потолков 4.5 м, нагрузка на пол 5 т/м². Подходит для Wildberries, Ozon, логистики.",
+          "description": "Продажа промбазы 2020 м²: производственные помещения, складские площади, офисный модуль. Идеально подходит как фулфилмент-центр для Wildberries и Ozon, с площадкой для стоянки фур и возможностью СТО. Готовые коммуникации, охраняемая территория.",
           "telephone": "+79999115020",
           "areaServed": {
             "@type": "AdministrativeArea",
@@ -326,19 +358,22 @@
             {"@type": "LocationFeatureSpecification", "name": "Офисный модуль", "value": "150 м²"},
             {"@type": "LocationFeatureSpecification", "name": "Высота потолков", "value": "4.5 м"},
             {"@type": "LocationFeatureSpecification", "name": "Нагрузка на пол", "value": "5 т/м²"},
-            {"@type": "LocationFeatureSpecification", "name": "Охраняемая территория", "value": true}
+            {"@type": "LocationFeatureSpecification", "name": "Охраняемая территория", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Фулфилмент центр", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Площадка для стоянки фур", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Возможность СТО", "value": true}
           ]
         },
         {
           "@type": "CommercialProperty",
-          "name": "TechBase360 — Дополнительная площадка",
+          "name": "Techbase 360 — Дополнительная площадка",
           "url": "https://techbase360.ru/",
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": 55.3123,
             "longitude": 38.7011
           },
-          "description": "Дополнительная логистическая площадка для аренды или покупки в Воскресенске."
+          "description": "Дополнительная логистическая площадка Techbase 360 для аренды или покупки в Воскресенске, также подходит для фулфилмента и стоянки грузового транспорта."
         },
         {
           "@context": "https://schema.org",
@@ -349,7 +384,7 @@
               "name": "Какие преимущества аренды склада в Воскресенске?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Аренда склада в Воскресенске обеспечивает близость к Москве и крупным транспортным узлам, развитую логистическую инфраструктуру и доступные цены. Наш комплекс идеально расположен для эффективной дистрибуции."
+                "text": "Аренда склада в Воскресенске обеспечивает близость к Москве и крупным транспортным узлам, развитую логистическую инфраструктуру и доступные цены. Наш комплекс Techbase 360 идеально расположен для эффективной дистрибуции и выполнения фулфилмент-операций."
               }
             },
             {
@@ -357,7 +392,7 @@
               "name": "Подойдет ли комплекс для Wildberries или Ozon?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Да, наш логистический комплекс идеально подходит для нужд крупных маркетплейсов, таких как Wildberries и Ozon, благодаря большой площади, высоте потолков, удобным подъездным путям и наличию всех необходимых коммуникаций."
+                "text": "Да, наш логистический комплекс Techbase 360 идеально подходит для нужд крупных маркетплейсов, таких как Wildberries и Ozon, благодаря большой площади, высоте потолков, удобным подъездным путям, площадке для стоянки фур и наличию всех необходимых коммуникаций для фулфилмента и обработки заказов."
               }
             },
             {
@@ -365,7 +400,7 @@
               "name": "Возможно ли купить промбазу с офисом?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Наш комплекс предлагает как аренду, так и возможность покупки промбазы, включая готовый склад и встроенный офисный модуль. Это позволяет полностью интегрировать ваши операционные и административные нужды."
+                "text": "Наш комплекс Techbase 360 предлагает как аренду, так и возможность покупки промбазы, включая готовый склад и встроенный офисный модуль. Это позволяет полностью интегрировать ваши операционные и административные нужды, включая возможности для СТО и хранения грузового транспорта."
               }
             }
           ]
@@ -391,8 +426,8 @@
 
     <section id="hero" class="hero">
         <div class="container">
-            <h1>Логистический комплекс TechBase360</h1>
-            <p>Готовый склад 2020 м² в Воскресенске с офисным модулем. Идеально для вашего бизнеса.</p>
+            <h1>Логистический комплекс Techbase 360</h1>
+            <p>Производственно-складской комплекс 2020 м² в Воскресенске. Готовое решение для вашего бизнеса: фулфилмент, склад, стоянка фур, СТО.</p>
             <a href="#contact" class="btn">Оставить заявку</a>
         </div>
     </section>
@@ -415,8 +450,9 @@
                     <ul>
                         <li>Все коммуникации (электричество, вода, канализация)</li>
                         <li>Охраняемая территория, видеонаблюдение</li>
-                        <li>Удобный подъезд для грузового транспорта</li>
+                        <li>Удобный подъезд для грузового транспорта, стоянка фур</li>
                         <li>Парковка для легковых и грузовых автомобилей</li>
+                        <li>Возможность организации СТО и техобслуживания</li>
                     </ul>
                 </div>
                 <div class="feature-item">
@@ -436,18 +472,18 @@
         <div class="container">
             <h2>Преимущества работы с нами</h2>
             <p>
-                Мы предлагаем готовое решение для вашего бизнеса: современный логистический комплекс, соответствующий всем стандартам. 
-                Идеально подходит для размещения склада, производства, дистрибуционного центра или пункта выдачи заказов.
+                Мы предлагаем готовое решение для вашего бизнеса: современный логистический комплекс Techbase 360, соответствующий всем стандартам. 
+                Идеально подходит для размещения склада, производства, дистрибуционного центра, фулфилмент-центра или пункта выдачи заказов для маркетплейсов (Wildberries, Ozon).
                 Высокие потолки и прочные полы обеспечивают эффективное использование пространства.
                 Наличие офисного модуля позволяет удобно управлять процессами на месте.
-                Охраняемая территория гарантирует сохранность вашего имущества.
+                Охраняемая территория гарантирует сохранность вашего имущества, а также предоставляет площадку для стоянки грузового транспорта и возможность организации СТО.
             </p>
             <div style="margin-top: 30px;">
                 <button class="expand-btn">
                     Подробнее о возможностях <span>+</span>
                 </button>
                 <div class="content">
-                    <p>Наш комплекс адаптирован под различные нужды бизнеса: от хранения товаров до размещения легкого производства. Гибкие условия покупки или аренды позволяют выбрать оптимальный вариант сотрудничества.</p>
+                    <p>Наш комплекс Techbase 360 адаптирован под различные нужды бизнеса: от хранения товаров и обработки заказов до размещения легкого производства. Гибкие условия покупки или аренды позволяют выбрать оптимальный вариант сотрудничества, будь то фулфилмент для интернет-магазина, склад для сборки и упаковки заказов или территория для стоянки спецтехники.</p>
                 </div>
             </div>
         </div>
@@ -469,7 +505,7 @@
         <div class="container">
             <h2>Расположение</h2>
             <div class="location-content">
-                <p>Логистический комплекс TechBase360 расположен по адресу: **Воскресенск, ул. Центральная, 36А**.</p>
+                <p>Логистический комплекс Techbase 360 расположен по адресу: **Воскресенск, ул. Центральная, 36А**.</p>
                 <div class="map-container">
                     <iframe src="https://yandex.ru/map-widget/v1/?ll=38.6792,55.3187&z=16&mode=search&text=Воскресенск%2C%20ул.%20Центральная%2C%2036А" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
                 </div>
@@ -499,25 +535,26 @@
         </div>
     </section>
     
-    <a href="https://wa.me/+79999115020" class="whatsapp-btn" aria-label="WhatsApp" target="_blank">
+    <a href="https://wa.me/+79999115020" class="whatsapp-btn" aria-label="Написать в WhatsApp" target="_blank">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.085-.315-.175-.322-.52-.518-.344-.195-1.92-.937-2.227-1.047-.306-.11-.529-.164-.752.164-.224.329-.867 1.047-1.063 1.26-.195.213-.39.238-.724.093-.334-.145-.992-.365-1.89-1.161-.69-.607-1.156-1.357-1.293-1.597-.137-.24-.014-.368.106-.484.097-.097.213-.238.324-.357.11-.12.148-.204.22-.345.074-.14.037-.264-.018-.372-.054-.108-.475-1.144-.652-1.564-.176-.42-.352-.36-.52-.368-.17-.008-.367-.02-.56-.02-.196 0-.52.073-.796.393-.276.32-.988.966-.988 2.364s1.015 2.744 1.155 2.946c.14.202 1.936 2.977 4.707 4.148 2.316.974 2.766.793 3.327.747.562-.045 1.764-.72 2.01-1.428.24-.707.24-1.29.17-1.428-.066-.137-.24-.213-.49-.346zm-5.021 5.093l-.36-.046c-2.457-.6-4.01-3.268-4.145-3.415-.135-.147-.282-.367-.282-.57s.075-.41.135-.49c.06-.08.12-.11.23-.21.11-.1.2-.18.31-.28.11-.1.19-.17.27-.26.08-.09.13-.15.19-.22.06-.07.09-.1.14-.14.05-.04.08-.05.1-.06.02-.01.03-.01.04-.01h.01c.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03"/>
+            <path d="M17.472 14.382c-.085-.315-.175-.322-.52-.518-.344-.195-1.92-.937-2.227-1.047-.306-.11-.529-.164-.752.164-.224.329-.867 1.047-1.063 1.26-.195.213-.39.238-.724.093-.334-.145-.992-.365-1.89-1.161-.69-.607-1.156-1.357-1.293-1.597-.137-.24-.014-.368.106-.484.097-.097.213-.238.324-.357.11-.12.148-.204.22-.345.074-.14.037-.264-.018-.372-.054-.108-.475-1.144-.652-1.564-.176-.42-.352-.36-.52-.368-.17-.008-.367-.02-.56-.02-.196 0-.52.073-.796.393-.276.32-.988.966-.988 2.364s1.015 2.744 1.155 2.946c.14.202 1.936 2.977 4.707 4.148 2.316.974 2.766.793 3.327.747.562-.045 1.764-.72 2.01-1.428.24-.707.24-1.29.17-1.428-.066-.137-.24-.213-.49-.346zm-5.021 5.093l-.36-.046c-2.457-.6-4.01-3.268-4.145-3.415-.135-.147-.282-.367-.282-.57s.075-.41.135-.49c.06-.08.12-.11.23-.21.11-.1.2-.18.31-.28.11-.1.19-.17.27-.26.08-.09.13-.15.19-.22.06-.07.09-.1.14-.14.05-.04.08-.05.1-.06.02-.01.03-.01.04-.01h.01c.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03-.007.01 0 .02-.007.03"/>
         </svg>
+        <span>Написать</span>
     </a>
 
     <footer style="background: var(--graphite); color: #fff; padding: 30px 0; text-align: center; font-size: 0.9em;">
         <div class="container">
-            <p>© 2024 TechBase360 — Логистический комплекс в Воскресенске</p>
+            <p>© 2024 Techbase 360 — Логистический комплекс в Воскресенске</p>
             <p>
-                <a href="#" style="color: var(--text-light); text-decoration: none;">Политика конфиденциальности</a> | 
-                <a href="#" style="color: var(--text-light); text-decoration: none;">Условия использования</a>
+                <a href="/privacy" style="color: var(--text-light); text-decoration: none;">Политика конфиденциальности</a> | 
+                <a href="/terms" style="color: var(--text-light); text-decoration: none;">Условия использования</a>
             </p>
-            <div class="breadcrumbs" style="margin-top:15px;font-size:0.8rem;color:#999;">
-                <a href="/" style="color: #999; text-decoration: none;">Главная</a> / <span>Комплекс</span>
-            </div>
             <div class="footer-buttons">
                 <a href="https://www.cian.ru/sale/warehouse/YOUR_CIAN_ID/" target="_blank" class="btn-secondary">ЦИАН</a>
                 <a href="https://www.avito.ru/moskovskaya_oblast_voskresensk/kommercheskaya_nedvizhimost/sklad_YOUR_AVITO_ID" target="_blank" class="btn-secondary">Авито</a>
+            </div>
+            <div class="breadcrumbs breadcrumbs-footer">
+                <a href="/" style="color: #999; text-decoration: none;">Главная</a> / <span>Комплекс</span>
             </div>
         </div>
     </footer>
@@ -525,14 +562,43 @@
     <div aria-hidden="true" style="position:absolute;left:-9999px">
         <h3>Поисковые запросы:</h3>
         <ul>
-            <li>аренда склада с офисом Воскресенск</li>
-            <li>купить промбазу для Wildberries</li>
-            <li>купить склад в Воскресенске недорого</li>
-            <li>аренда производственного помещения Московская область</li>
-            <li>готовые склады для маркетплейсов</li>
-            <li>купить промбазу под логистику</li>
-            <li>готовые склады Wildberries Московская область</li>
-            <li>склад в Воскресенске</li>
+            <li>логистический комплекс Воскресенск</li>
+            <li>складской терминал Воскресенск</li>
+            <li>производственная база Московская область</li>
+            <li>промбаза с офисом и складом</li>
+            <li>fulfillment центр под Wildberries</li>
+            <li>fulfillment центр под Ozon</li>
+            <li>площадка для стоянки фур</li>
+            <li>логистическая база под e-commerce</li>
+            <li>комплекс под маркетплейс</li>
+            <li>склад для интернет-магазина</li>
+            <li>центр логистики Wildberries</li>
+            <li>центр логистики Ozon</li>
+            <li>парковка грузового транспорта</li>
+            <li>стоянка для тягача</li>
+            <li>склад с въездом фуры</li>
+            <li>площадка под техобслуживание</li>
+            <li>склад для хранения товаров</li>
+            <li>склад для сборки и упаковки заказов</li>
+            <li>ангар под фулфилмент</li>
+            <li>фулфилмент комплекс Воскресенск</li>
+            <li>центр обработки заказов</li>
+            <li>логистический узел рядом с М5</li>
+            <li>распределительный центр Подмосковье</li>
+            <li>территория для стоянки спецтехники</li>
+            <li>участок с площадкой под грузовую логистику</li>
+            <li>площадка под СТО и склад</li>
+            <li>производственная зона с охраной</li>
+            <li>склад с готовыми коммуникациями</li>
+            <li>площадка под хранение и отгрузку</li>
+        </ul>
+        <h3>Синонимы:</h3>
+        <ul>
+            <li>логистический комплекс: складской терминал, производственная база, фулфилмент центр, распределительный центр, логистическая платформа</li>
+            <li>фулфилмент: обработка заказов, склад для e-commerce, хранение и упаковка, центр логистики маркетплейса, склад интернет-магазина</li>
+            <li>маркетплейс: Wildberries, Ozon, СберМегаМаркет, Яндекс.Маркет, интернет-магазин</li>
+            <li>грузовой транспорт: фура, тягач, грузовик, спецтехника, автотранспорт</li>
+            <li>СТО: техническое обслуживание, осмотровая яма, гараж под СТО, сервис грузовиков, автосервис</li>
         </ul>
     </div>
 
@@ -549,10 +615,22 @@
             btn.addEventListener('click', function() {
                 this.classList.toggle('active');
                 const content = this.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                // Вместо display:block/none используем max-height для плавного раскрытия/скрытия
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+                // Изменение символа + на -
+                const span = this.querySelector('span');
+                if (span) {
+                    span.textContent = this.classList.contains('active') ? '-' : '+';
+                }
             });
         });
-        
+        // Добавляем transition для плавности раскрытия
+        document.head.insertAdjacentHTML('beforeend', `<style>.content { transition: max-height 0.3s ease-out; overflow: hidden; max-height: 0; }</style>`);
+
         // Плавная прокрутка из исходного файла студента - СОХРАНЕНА
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -572,7 +650,7 @@
             this.reset();
         });
 
-        // ServiceWorker registration (PWA)
+        // ServiceWorker registration (PWA) - СОХРАНЕНО ИЗ ВАШЕГО deepseek_html_20250621_179633.html
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -582,24 +660,26 @@
                 });
             });
         }
-        
-        // Google Analytics (Universal Analytics - analytics.js)
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'G-XXXXXXXXXX', 'auto'); // !!! ЗАМЕНИТЕ НА ВАШ ID Google Analytics !!!
-        ga('send', 'pageview');
+    </script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); // !!! ЗАМЕНИТЕ НА ВАШ ID Google Analytics !!!
+    </script>
 
-        // Yandex.Metrika
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        ym(XXXXXX, "init", { // !!! ЗАМЕНИТЕ XXXXXX НА ВАШ ID СЧЕТЧИКА Яндекс.Метрики !!!
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+       ym(XXXXXX, "init", { // !!! ЗАМЕНИТЕ XXXXXX НА ВАШ ID СЧЕТЧИКА Яндекс.Метрики !!!
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true,
             webvisor:true
-        });
+       });
     </script>
-</body>
+    <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </body>
 </html>
